@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
   <header class="site-header">
@@ -58,6 +58,7 @@
             <img class="icon" src="assets/img/gaffe/icon.png" alt="Gaffe app icon" width="84" height="84">
             <h3>Gaffe</h3>
             <p class="meta">iOS · March 2020</p>
+            <p class="rating" data-app-store-id="1503943703" hidden></p>
             <p class="desc">A political soundboard with the most popular gaffes and quotes from the best-known faces in politics.</p>
             <div class="links">
               <a href="gaffe/">Details</a>
@@ -69,6 +70,7 @@
             <img class="icon" src="assets/img/false-positive/icon.png" alt="False Positive app icon" width="84" height="84">
             <h3>False Positive</h3>
             <p class="meta">iOS · August 2020</p>
+            <p class="rating" data-app-store-id="1524388617" hidden></p>
             <p class="desc">An interactive tool for understanding medical testing probability.</p>
             <div class="links">
               <a href="false-positive/">Details</a>
@@ -80,6 +82,7 @@
             <img class="icon" src="assets/img/beach-ball-runner/icon.png" alt="Beach Ball Runner app icon" width="84" height="84">
             <h3>Beach Ball Runner</h3>
             <p class="meta">iOS · August 2020</p>
+            <p class="rating" data-app-store-id="1514274329" hidden></p>
             <p class="desc">An endless runner on the beach. Dodge obstacles, grab stars and see how far you can go.</p>
             <div class="links">
               <a href="beach-ball-runner/">Details</a>
@@ -90,8 +93,8 @@
           <article class="app-card">
             <img class="icon" src="assets/img/volleyballr/icon.png" alt="VolleyBallR icon" width="84" height="84">
             <h3>VolleyBallR</h3>
-            <p class="meta">Web app · 2016</p>
-            <p class="desc">Interactive volleyball attack charts with detailed scouting filters. Used by the University of Utah women's volleyball team for about ten years.</p>
+            <p class="meta">Web app · 2016–2022</p>
+            <p class="desc">Interactive volleyball attack charts with detailed scouting filters. Used by the University of Utah women's volleyball team for analytics from 2016 to 2022.</p>
             <div class="links">
               <a href="volleyballr/">Details</a>
               <a href="https://github.com/jon-bown/VolleyballR">Source on GitHub</a>
@@ -183,6 +186,7 @@
       </nav>
     </div>
   </footer>
+  <script src="assets/js/ratings.js?v=3" defer></script>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
