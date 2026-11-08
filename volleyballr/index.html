@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VolleyBallR | App Factorial LLC</title>
+  <meta name="description" content="Interactive volleyball attack charts built with R and Shiny, used by the University of Utah women's volleyball team for about ten years.">
+  <link rel="canonical" href="https://appfactorial.com/volleyballr/">
+  <meta property="og:title" content="VolleyBallR | App Factorial LLC">
+  <meta property="og:description" content="Interactive volleyball attack charts built with R and Shiny, used by the University of Utah women's volleyball team for about ten years.">
+  <meta property="og:image" content="https://appfactorial.com/assets/img/volleyballr/icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../"><img src="../assets/img/logo.png" alt="" width="44" height="31"><span>App Factorial</span></a>
+      <nav class="nav">
+        <a href="../#apps" aria-current="page">Apps</a>
+        <a href="../#contact">Contact</a>
+        <a href="../privacy/">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="app-hero">
+      <div class="container">
+        <img class="icon" src="../assets/img/volleyballr/icon.png" alt="VolleyBallR icon" width="128" height="128">
+        <div>
+          <span class="eyebrow">Web app · R and Shiny</span>
+          <h1>VolleyBallR</h1>
+          <p class="lead">Interactive charts of every volleyball attack. Pick a player or team, filter by how the play developed, and see on the court where attacks land and how they turn out.</p>
+          <p class="note">Used by the University of Utah women's volleyball team for about ten years.</p>
+          <a class="btn btn-primary" href="https://github.com/jon-bown/VolleyballR">View the source on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="prose">
+        <h2>The story</h2>
+        <p>VolleyBallR was one of our very first projects. In November 2016 we started from <a href="https://github.com/toddwschneider/ballr">BallR</a>, Todd W. Schneider's open-source app for interactive NBA shot charts, and rebuilt it for volleyball.</p>
+        <p>That meant redrawing the court as a volleyball half court, replacing the NBA stats feed with volleyball scouting data, and adding the filters a volleyball staff actually uses: attack combination, set call, pass rating, blockers, rotation and more.</p>
+        <p>The University of Utah women's volleyball team went on to use it in production for about ten years. When new seasons brought new data, the app was updated to keep up, including a 2021 change so it could read the 2020 season's files.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><h2>How it works</h2></div>
+        <div class="features">
+          <div class="feature"><h3>Volleyball court charts</h3><p>Attacks are plotted on a redrawn volleyball half court, with the attack line marked, instead of a basketball court.</p></div>
+          <div class="feature"><h3>Player, team or opponent</h3><p>Chart a single player, a whole team, or what an opponent has done against one team or the entire league.</p></div>
+          <div class="feature"><h3>Volleyball filters</h3><p>Narrow attacks down by attack combination, result, pass, dig or free-ball rating, pace, number of blockers, rotation, set rating, set call, set zone and attack speed.</p></div>
+          <div class="feature"><h3>In or out of system</h3><p>Compare attacks run in system with those run out of system.</p></div>
+          <div class="feature"><h3>Three chart types</h3><p>Switch between hexagon, scatter and heat map views of the same attacks.</p></div>
+          <div class="feature"><h3>Scouting data</h3><p>Loads attack data exported from match scouting, with court coordinates and result codes for each attack.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Built with</h2>
+          <p>Written in R as a Shiny web app, with charts drawn using ggplot2 and hexbin.</p>
+        </div>
+        <ul class="chips">
+          <li>R</li>
+          <li>Shiny</li>
+          <li>ggplot2</li>
+          <li>hexbin</li>
+          <li>dplyr</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2026</span> App Factorial LLC</span>
+      <nav>
+        <a href="../privacy/">Privacy</a>
+        <a href="mailto:apps@appfactorial.com">Email</a>
+        <a href="https://twitter.com/app_factorial">X / Twitter</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

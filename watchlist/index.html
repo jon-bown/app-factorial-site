@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watchlist (concept) | App Factorial LLC</title>
+  <meta name="description" content="Build custom lists of movies and TV shows to watch, track what you've seen, and find where to stream, rent or buy.">
+  <link rel="canonical" href="https://appfactorial.com/watchlist/">
+  <meta property="og:title" content="Watchlist | App Factorial LLC">
+  <meta property="og:description" content="Build custom lists of movies and TV shows to watch, track what you've seen, and find where to stream, rent or buy.">
+  <meta property="og:image" content="https://appfactorial.com/assets/img/watchlist/icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../"><img src="../assets/img/logo.png" alt="" width="44" height="31"><span>App Factorial</span></a>
+      <nav class="nav">
+        <a href="../#apps" aria-current="page">Apps</a>
+        <a href="../#contact">Contact</a>
+        <a href="../privacy/">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="app-hero">
+      <div class="container">
+        <img class="icon" src="../assets/img/watchlist/icon.png" alt="Watchlist app icon" width="128" height="128">
+        <div>
+          <span class="eyebrow">Android concept app</span>
+          <h1>Watchlist</h1>
+          <p class="lead">Build custom lists of the movies and TV shows you want to watch, check them off as you go, and see where each one is available to stream, rent or buy.</p>
+          <p class="note">Watchlist is a concept app and isn't available in the Play Store. The full source code is on GitHub.</p>
+          <a class="btn btn-primary" href="https://github.com/jon-bown/watchlist">View the source on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><h2>How it works</h2></div>
+        <div class="features">
+          <div class="feature"><h3>Explore</h3><p>Browse popular, now playing, trending and upcoming titles, and switch between movies and TV with one tap.</p></div>
+          <div class="feature"><h3>Your lists</h3><p>Create as many watchlists as you like, and add a title to several of them at once.</p></div>
+          <div class="feature"><h3>Seen it</h3><p>Check off what you've watched, then filter each list by all, seen or unseen. Swipe left to remove a title or a whole list.</p></div>
+          <div class="feature"><h3>Where to watch</h3><p>See which services have a title to stream, rent or buy in your region.</p></div>
+          <div class="feature"><h3>Search</h3><p>Find any movie or TV show and add it straight to your lists.</p></div>
+          <div class="feature"><h3>Your language, your region</h3><p>Pick a language for movie info and a region for streaming availability. Both default to your device settings.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Built with</h2>
+          <p>Written in Kotlin. Accounts and lists are stored in Firebase, and movie and TV data comes from The Movie Database (TMDB).</p>
+        </div>
+        <ul class="chips">
+          <li>Kotlin</li>
+          <li>Android</li>
+          <li>Firebase Auth</li>
+          <li>Cloud Firestore</li>
+          <li>Retrofit</li>
+          <li>OkHttp</li>
+          <li>Glide</li>
+          <li>TMDB API</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2026</span> App Factorial LLC</span>
+      <nav>
+        <a href="../privacy/">Privacy</a>
+        <a href="mailto:apps@appfactorial.com">Email</a>
+        <a href="https://twitter.com/app_factorial">X / Twitter</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
